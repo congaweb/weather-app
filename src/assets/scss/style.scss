@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+#app {
+    position: relative;
+    max-width: 360px;
+    margin: 0 auto;
+    background: url("assets/img/cold-bg.jpg") no-repeat top center / contain;
+    min-height: 640px;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+}
+
+#nav {
+    padding: 30px;
+    margin: 0;
+
+    a {
+        font-weight: bold;
+        color: #fff;
+        display: inline-block;
+        text-decoration: none;
+        &.router-link-exact-active {
+            color: #226585;
+            text-decoration: underline;
+        }
+        & + a {
+            margin-left: 20px;
+        }
+    }
+}
+footer {
+    position: absolute;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
